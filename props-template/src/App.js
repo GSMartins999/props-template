@@ -3,6 +3,7 @@ import "./styles.css";
 
 export default function App() {
   const nome = "Aninha"
+  const nome2 = "Blade"
 
   function apresentaGaragem(name){
     alert(`Boas vindas à garagem de ${name}`)
@@ -37,6 +38,14 @@ export default function App() {
 
   return (
     <div>
+      <Garagem
+        nome={nome2}
+        apresentaGaragem={apresentaGaragem}
+        carro1={carros[0]}
+        carro2={carros[1]}
+        carro3={carros[2]}
+        carro4={carros[3]}
+      />
       <Garagem 
         //passando props para o componente filho "Garagem"
         nome={nome} 
