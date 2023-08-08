@@ -39,6 +39,7 @@ export default function App() {
   return (
     <div>
       <Garagem
+       //passando props para o componente filho "Garagem"
         nome={nome2}
         apresentaGaragem={apresentaGaragem}
         carro1={carros[0]}
@@ -47,7 +48,6 @@ export default function App() {
         carro4={carros[3]}
       />
       <Garagem 
-        //passando props para o componente filho "Garagem"
         nome={nome} 
         apresentaGaragem={apresentaGaragem}
         carro1={carros[0]}
