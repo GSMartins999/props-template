@@ -2,9 +2,10 @@ import Carro from "./Carro";
 
 function Garagem(props) {
   return (
-    <div>
+    <div className="gaga">
       <h1>Garagem de {props.nome}</h1>
-      <button
+      
+      <button className="botao"
         onClick={() => {
           props.apresentaGaragem(props.nome);
         }}
@@ -12,7 +13,6 @@ function Garagem(props) {
         Clique aqui
       </button>
 
-      {/* Passando as props que vieram do App para o componente Carro */}
       <Carro
         nome={props.carro1.nome}
         cor={props.carro1.cor}
@@ -24,18 +24,6 @@ function Garagem(props) {
         cor={props.carro2.cor}
         ano={props.carro2.ano}
         isFlex={props.carro2.isFlex}
-      />
-      <Carro
-        nome={props.carro3.nome}
-        cor={props.carro3.cor}
-        ano={props.carro3.ano}
-        isFlex={props.carro3.isFlex}
-      />
-      <Carro
-        nome={props.carro4.nome}
-        cor={props.carro4.cor}
-        ano={props.carro4.ano}
-        isFlex={props.carro4.isFlex}
       />
     </div>
   );
